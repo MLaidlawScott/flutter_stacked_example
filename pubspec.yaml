@@ -40,6 +40,7 @@ dependencies:
   get_it:
   injectable:
   flutter_hooks:
+  observable_ish:
 
 dev_dependencies:
   flutter_test:

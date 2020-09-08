@@ -16,6 +16,7 @@ class PartialBuildsView extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               _StringForm(),
+              _TitleAndValue(),
             ],
           ),
         );
@@ -46,10 +47,11 @@ class _TitleAndValue extends ViewModelWidget<PartialBuildsViewModel> {
   @override
   Widget build(
       BuildContext context, PartialBuildsViewModel partialBuildsViewModel) {
+    print('title and value rebuild');
     return Column(
       children: <Widget>[
         Text(
-          model.title ?? '',
+          partialBuildsViewModel.title ?? '',
           style: TextStyle(fontSize: 40),
         ),
       ],
